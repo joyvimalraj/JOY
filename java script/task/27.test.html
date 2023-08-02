@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            padding: 10px;
+        }
+        .box{
+            height:600px;
+            width:400px;
+            margin:auto auto ;
+            background:#f2f3f7;
+            border: 2px solid black;
+            padding:20px;
+            font-size: 30px;
+            border-radius: 30px;
+           
+        }
+        h2{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .lab{
+            font-size: 25px;
+        }
+        .bttn{
+            display: block;
+            margin : auto;
+            text-align: center;
+        }
+        .bttn:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .li{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        function submit()
+        {
+         let a=document.getElementById("input").value
+         for(let i=0;i<a.length;i++)
+         {
+           let b=a[i].charCodeAt()
+            if((b>=65 && b<=90) && (b>97 && b<=122))
+            {
+            
+                document.getElementById("show").innerHTML=("your password is correct")
+
+            }
+           
+        }}
+     
+
+        
+          
+          
+
+    </script>
+    <div class="box">
+        <h2>Welcome</h2>
+        <lable>Email :</lable><br>
+        <input type="email" placeholder="Enter your email address" class="lab"><br><br>
+        <label >Password :</label><br>
+        <input type="password" placeholder="Enter your password" class="lab" id="input"><br><br>
+        <div class="show">
+             <p id="show"></p>
+        </div>
+        <ul class="li">
+            <li>Lowercase & uppercase</li>
+            <li>Number (0 - 9)</li>
+            <li>Special character (!,@,$,%)</li>
+            <li>Atleast 8 character</li>
+        </ul>
+        <button onclick="submit()" class="bttn"style="font-size: 15px; background-color: red; color:white; height:40px; border-radius: 10px;">Create account</button>
+        <p style="font-size: 20px; text-align: center;">Already have account ? Sign in  <a href="" style="color: red;">here</a></p>
+       
+    </div>
+</body>
+</html>

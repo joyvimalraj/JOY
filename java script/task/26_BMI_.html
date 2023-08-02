@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+          border:5px solid black;
+          padding:10px;
+          width:350px;
+          
+        }
+        .cen{
+            display: flex;
+            align-items: center;
+
+        }
+        .box1{
+            margin-left: 30px;
+        }
+        .cenn{
+            margin-left: 80px;
+        }
+        .in{
+            border:3px solid black;
+            width:70px;
+            height:15px;
+            padding:2px;
+        }
+        .inn{
+            border:3px solid black;
+            width:70px;
+            height:15px;
+            padding:2px;
+        }
+        @keyframes rot{
+            100%{
+               transform:rotateY(360deg);
+               
+            }}
+
+            @keyframes roo {
+                100%{
+                    transform: scale(1.1);
+                }
+                
+            }
+        
+        .head{
+            animation: rot 5s  linear infinite;
+            
+    
+        }
+        .cenn:hover{
+            animation: roo .7s  linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function cal()
+        {
+        let a=document.getElementById("aa").value
+        let b=document.getElementById("bb").value
+        
+        let c=((a)/(b*b))*1000;
+        
+        document.getElementById("show").innerHTML=("Your BMI:"+" "+c)
+        }
+        function range()
+        {
+            let a=document.querySelector("#aa").value
+            let b=document.querySelector("#bb").value
+         aa=document.querySelector(".in")
+         bb=document.querySelector(".inn")
+         aa.innerHTML=a
+         bb.innerHTML=b
+        }
+
+
+    </script>
+    <div class="box">
+       <div class="box1">
+        <div class="head">
+        <h1>Calculate your BMI</h1><br>
+        </div>
+       
+        <input type="range" min="0" max="100" id="aa" onchange="range()">
+        
+        <div class="cen">
+            <P>WEIGHT :</P>
+             <div class="in"></div>
+            <p>Kg</p>
+        </div>
+        <div>
+           
+            <input type="range" min="0" max="200" id="bb" onchange="range()">
+            
+            <div class="cen">
+                <P>HEIGHT :</P>
+               <div class="inn"></div>
+                <p>Cm</p>
+            </div>
+        
+        <button onclick="cal()" style="background-color: orange; color: white; padding:10px"; class="cenn">CALCULATE</button>
+         <p id="show"></p>
+       </div>
+    </div>
+</body>
+</html>

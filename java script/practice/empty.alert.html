@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt()
+        for(let i=0;i<a.length;i++)
+        {
+           let b=a[i].charCodeAt()
+           if(b>=48 && b<=57) 
+           {
+             
+              window.alert("Valid number")
+              
+           }
+           else if(b=="")
+           {
+              alert("please enter the valid number");
+           }
+           else{
+                alert("invalid number")
+           } 
+        }
+    </script>
+</body>
+</html>

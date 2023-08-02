@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid black;
+            height:200px;
+            width:200px;
+            padding:20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+       function submit()
+       {
+
+        let a=document.getElementById("txt").value
+        let b=0
+        for(i=0;i<a.length;i++)
+        {
+            let b=a.charCodeAt()
+            if(b>=97 && b<=122)
+            {
+                document.getElementById("out").innerHTML=(a.toUpperCase())
+            }
+            else{
+                document.getElementById("out").innerHTML=b
+            }
+            
+       
+       }}
+    </script>
+    <div class="box">
+        <div>
+        <p class="box1">Enter the String</p>
+        <input type="text" id="txt">
+        <button onclick="submit()" >submit</button>
+        </div>
+        <p id="out"></p>
+       
+    </div>
+        
+   
+</body>
+</html>

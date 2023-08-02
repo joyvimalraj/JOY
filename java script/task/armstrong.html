@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+           border:2px solid black;
+           padding:5em;
+           width:200px;
+           font-size: 20px;
+           font-weight: bold;
+           
+           justify-content: center;
+
+        }
+        .box{
+            display:flex;
+            margin-left: -40px;
+            
+            
+        }
+        #out{
+            border: 2px solid black;
+          height:60px;
+          width:200px;
+          text-align: center;
+
+        }
+       
+    </style>
+</head>
+
+
+<script>
+   function submit()
+   {
+   let n=document.getElementById("in").value;
+   let b=0;
+   for(let i=0;i<n.length;i++)
+   {
+   b=b+parseInt(n[i]*n[i]*n[i])
+   }
+   if(n==b)
+   
+   {
+    document.getElementById("out").innerHTML=n+"is armstrong number"
+   }
+   else{
+    document.getElementById("out").innerHTML=n+"is not a armstrong number"
+   }}
+
+
+
+   
+</script>
+<body>
+    <div class="box1">
+    <p>Enter the number</p>
+    <div class="box">
+    <p>Number:</p>
+    <input type="text" height="20px" width="100px" id="in" >
+    <button onclick="submit()">Submit</button>
+   
+    </div>
+    <div class="outt">
+        <p id="out"></p>
+    </div>
+</div>
+</body>
+</html>
