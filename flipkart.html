@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+    *{
+        margin:0px 5px;
+        padding: 0;
+        
+    
+    }
+   
+    
+    .nav
+    {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        padding: 20px;
+        width:99.3%;
+        margin-left:-20px;
+        justify-content: space-around;
+        background-color:rgb(46, 115, 224);
+        font-size: 22px;
+        height:15px;
+       
+        
+        
+    }
+    .pl{
+         color: yellow;
+    }
+    .fl{
+        margin-top:-12px;
+        margin-left: 5%;
+        
+    }
+    input{
+        width: 600px;
+        height:28px;
+    }
+    .head{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        background-color: white;
+        height:50px;
+        width:100%;
+       
+        
+
+        }
+
+    .head li
+    {
+        padding: 25px;
+        font-weight: bold;
+        justify-content: space-between;
+        text-align: center;
+    
+    }
+    .head li:hover{
+        cursor: pointer;
+        border-bottom :3px solid rgb(60, 60, 211) ;
+        transition:.3s ease all;
+        color:rgb(80, 80, 216);
+        }
+
+    .pic{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    justify-content: space-around;
+    padding-left: 7%;
+    padding-right: 7%;
+    }
+
+    .pic1{
+        height:100px;
+        width: 100px;
+         padding: 10px;
+         }
+  .pic1 p{
+    text-align: center;
+   
+    width:100px;
+  }
+  .flight{
+    margin-top: 10px;
+  }
+  .tab1{
+    height:370px;
+    margin-top:30px;
+   border: 2px solid rgb(255, 255, 255);
+   background-color:white;
+    }
+  .tab11{
+    height:300px;
+     width:220px;
+     border:2px solid rgb(197, 197, 197);
+    
+    
+
+  } 
+  .tab2{
+    display:flex;
+    gap:20%px;
+    justify-content: space-between;
+    height:250px;
+   
+
+  }
+  .tab11 img{
+    width:150px;
+    height:150px;
+    max-height: 150px;
+    margin-left:20px;
+    margin-top: 10px;
+    
+  }
+  .pic1 p:hover{
+    color:rgb(35, 35, 255);
+    cursor: pointer;
+
+  }
+  .btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic1 img:hover{
+    transform: scale(1.2);
+}
+
+.pic1 p:hover{
+    transform: scale(1.2);
+
+
+}
+.head li:hover{
+    transform: scale(1.3);
+
+}
+.imgd{
+    display:flex;
+}
+.flip img{
+   height:20px;
+   width:80px;
+    margin-top:-20px;
+    margin-left:10px;
+}
+
+.price{
+    display:flex;
+    margin-left:-90px;
+    margin-top:25px;
+    align-items: center;
+    justify-content:left;
+}
+.footer{
+    font-family:sans-serif;
+       height:255px;
+       width:105%;
+       margin-left:-50px;
+       background-color:rgb(23,35,55);
+       padding: 10px;
+       display:flex;
+      
+      
+}
+.footer{
+    justify-content: space-around;
+}
+.footer1 ul{
+   margin-top:30px;
+   
+}
+.footer1 ul li{
+    color:white;
+    margin:3px;
+    list-style-type: none;
+    padding:3px;
+    font-size:12px;
+    margin-top:-1px;
+   
+   }
+   .line{
+    border: 1px solid;
+    height: 180px;
+    margin-top:30px;
+    margin-left:10px;
+    border-color: #454D5E;
+   }
+   .line2{
+    margin-top: -100px solid;
+    height:0.1mm;
+    border-color: #454D5E;
+     width:100%;
+   
+   }
+  .footer3{
+    height:70px;
+    width:106.5%;
+    margin-left: -50px;
+    background-color: rgb(23,35,55);
+    
+
+  }
+  .footer3 ul{
+    display:flex;
+    justify-content: space-around;
+    font-size: 15px;
+   
+    color:white;
+  }
+  .footer3 ul li{
+    font-family:sans-serif;
+    margin-top:20px;
+    font-size:15px;
+    list-style-type: none;
+  }
+  .tab11 img:hover{
+      transform:scale(1.1);
+      
+  }
+  .tab11 span{
+    font-size:15px;
+  }
+</style>
+</head>
+<body>
+
+  
+   <div class="nav">
+    <div class="fl">
+    <li style="color: white; font-size: 20px; align-items:center;">
+        Flipkart<br><i>Explore <span class="pl">plus</span></i>
+    </li>
+    </div>
+    <div >
+    <div>
+       <li>
+        <input style="font-size: 20px;"  placeholder= "Search for products,brands and more"> 
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+    </div>
+    </div>
+    <li>
+        <button  style="font-size:20px; color: blue; width:100px;" > Login</button>
+    </li>
+    <li style="color: white;">
+        Become a seller
+    </li>
+    <li style="color: white;">
+        More
+    </li>
+    <li style="color: white;">
+        Cart
+    </li>
+
+   </div>
+  
+  <div class="head" >
+ 
+    <li>Electronics</li>
+    <li>TVs & Appliances</li>
+    <li>Men </li>
+    <li>Women</li>
+    <li>Baby & Kids</li>
+    <li>Home & Furniture </li>
+    <li>Sports, Books & More</li>
+    <li>Flights</li>
+    <li>Offer Zone</li>
+
+    </div>
+
+    <div class="pic">
+
+        <div class="pic1">
+            <img src="top1.webp">
+            <p>Grocery</p>
+        </div>
+        <div class="pic1">
+            <img src="pic2.webp">
+            
+            <p>Mobiles</p>
+
+        </div>
+        <div class="pic1">
+           <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100">
+           <p>Fasion</p>
+        </div>
+        <div class="pic1">
+           <img src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100">
+           <p>Electronics</p>
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100">
+            <p>Home & Furniture</p>
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/0ff199d1bd27eb98.png?q=100">
+            <p>Appliances</p>
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100">
+            <p>Travel</p>
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/f15c02bfeb02d15d.png?q=100">
+            <p>Top Offer</p>
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100">
+            <p>Beauty,Toys & More</p>
+
+        </div>
+        <div class="pic1">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100">
+            <p>Two Wheelers</p>
+          </div>
+
+    </div>
+    <div class="flight">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/ffffb33d3a8085e1.jpg?q=20" width="100%">
+    </div>
+    
+
+
+    <div class="tab1">
+<br>
+    <p style="font-size: larger;" ><b>Best of Electronics</b></p><br>
+    <div class="tab2">
+
+        <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/612/612/l2p23rk0/iron/b/i/k/-original-imagdz3jvqmnukxt.jpeg?q=70">
+                        <p>Amaze NI 10 1100 W Dry Iron <br>
+                            <span>white Turquoise</span></p><br>
+                            <div class="flip">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                
+                      <div class="imgd">
+                        <p >3.4</p>
+                        <p>(834)</p>
+                        <div class="price">
+                        <p style="font-size: 20px;"> 
+                            <b>₹348 </b></p>
+                         <p ><s>₹998</s></p>
+                        <p style="color:green;">65% off</p>
+                    </div>
+                        </div>
+                     
+                           
+                      
+                       
+                        </div>
+                       
+            <p><b></b></p>
+        </div>
+
+    
+    <div class="tab11">
+        <img src="https://rukminim2.flixcart.com/image/612/612/krntoy80/mixer-grinder-juicer/j/c/p/with-free-electric-dry-iron-super-combo-longway-original-imag5epvawxjzyym.jpeg?q=70">
+        <p>700 W Mixer Grinder<br>
+            <span> White, 3 Jars</span></p><br>
+            <div class="flip">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                
+      <div class="imgd">
+        <p >4.3</p>
+        <p>(95)</p>
+        <div class="price">
+        <p style="font-size: 20px;"> 
+            <b><nbsp>₹1499</nbsp></b></p>
+         <p ><s>₹1,688</s></p>
+        <p style="color:green;">35% off</p>
+    </div>
+        </div>
+     
+           
+      
+       
+        </div>
+       
+<p><b></b></p>
+</div>
+
+     
+     <div class="tab11">
+<img src="https://rukminim2.flixcart.com/image/612/612/ju79hu80/hair-dryer-refurbished/6/6/x/c-hp8100-60-philips-original-imaffdv6pzdwhw2z.jpeg?q=70">       
+ <p>PHILIPS HP8100/60 Hair Dryer <br>
+    (1000 W, Blue)</p><br>
+            <div class="flip">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                
+      <div class="imgd">
+        <p >4.5</p>
+        <p>(1,508)</p>
+        <div class="price">
+        <p style="font-size: 20px;"> 
+            <b>₹843</b></p>
+         <p ><s>₹1,095</s></p>
+        <p style="color:green;">23% off</p>
+    </div>
+        </div>
+     
+           
+      
+       
+        </div>
+       
+<p><b></b></p>
+</div>  
+
+
+
+
+
+<div class="tab11">
+    <img src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70">
+    <p>NIKON Z6 II Kit Mirrorless<br>
+        black</p><br>
+        <div class="flip">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+            
+  <div class="imgd">
+    <p >4.8</p>
+    <p>(985)</p>
+    <div class="price">
+    <p style="font-size: 20px;"> 
+        <b> ₹9,990</b></p>
+     <p ><s>₹10,000</s></p>
+    <p style="color:green;">45% off</p>
+</div>
+    </div>
+ 
+       
+  
+   
+    </div>
+   
+<p><b></b></p>
+</div>       
+
+
+
+<div class="tab11">
+    <img src="https://rukminim2.flixcart.com/image/612/612/jz30nm80/otg-new/c/m/g/3500tmcss-bajaj-35-original-imafj6g3amygtzyz.jpeg?q=70">
+    <p>Amaze NI 10 1100 W Dry Iron <br>
+        white & Turquoise</p><br>
+        <div class="flip">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+            
+  <div class="imgd">
+    <p >3.8</p>
+    <p>(654)</p>
+    <div class="price">
+    <p style="font-size: 20px;"> 
+        <b>₹4,500</b></p>
+     <p ><s>₹4,999</s></p>
+    <p style="color:green;">15% off</p>
+</div>
+    </div>
+ 
+       
+  
+   
+    </div>
+   
+<p><b></b></p>
+</div>       
+
+
+
+
+
+
+<div class="tab11">
+    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/l/1/f/eco-electric-kettle-1-5-ltr-kan-ek-1-5-kreme-original-imagrnepyzgtphtj.jpeg?q=70">
+    <p>Amaze NI 10 1100 W Dry Iron <br>
+        white & Turquoise</p><br>
+        <div class="flip">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+            
+  <div class="imgd">
+    <p >4.2</p>
+    <p>(524)</p>
+    <div class="price">
+    <p style="font-size: 20px;"> 
+        <b>₹899</b></p>
+     <p ><s>₹998</s></p>
+    <p style="color:green;">12% off</p>
+</div>
+    </div>
+ 
+       
+  
+   
+    </div>
+   
+<p><b></b></p>
+</div>              
+</div>
+<br><br><br><br>
+
+
+
+<div class="tab1">
+    <br>
+        <p style="font-size: larger;" ><b>Beauty food and toys</b></p><br>
+        <div class="tab2">
+    
+            <div class="tab11">
+                <img src=" ">
+                            <p>Amaze NI 10 1100 W Dry Iron <br>
+                                <span>white Turquoise</span></p><br>
+                                <div class="flip">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                    
+                          <div class="imgd">
+                            <p >3.4</p>
+                            <p>(834)</p>
+                            <div class="price">
+                            <p style="font-size: 20px;"> 
+                                <b>₹348 </b></p>
+                             <p ><s>₹998</s></p>
+                            <p style="color:green;">65% off</p>
+                        </div>
+                            </div>
+                         
+                               
+                          
+                           
+                            </div>
+                           
+                <p><b></b></p>
+            </div>
+    
+        
+        <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/612/612/krntoy80/mixer-grinder-juicer/j/c/p/with-free-electric-dry-iron-super-combo-longway-original-imag5epvawxjzyym.jpeg?q=70">
+            <p>700 W Mixer Grinder<br>
+                <span> White, 3 Jars</span></p><br>
+                <div class="flip">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                    
+          <div class="imgd">
+            <p >4.3</p>
+            <p>(95)</p>
+            <div class="price">
+            <p style="font-size: 20px;"> 
+                <b><nbsp>₹1499</nbsp></b></p>
+             <p ><s>₹1,688</s></p>
+            <p style="color:green;">35% off</p>
+        </div>
+            </div>
+         
+               
+          
+           
+            </div>
+           
+    <p><b></b></p>
+    </div>
+    
+         
+         <div class="tab11">
+    <img src="https://rukminim2.flixcart.com/image/612/612/ju79hu80/hair-dryer-refurbished/6/6/x/c-hp8100-60-philips-original-imaffdv6pzdwhw2z.jpeg?q=70">       
+     <p>PHILIPS HP8100/60 Hair Dryer <br>
+        (1000 W, Blue)</p><br>
+                <div class="flip">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                    
+          <div class="imgd">
+            <p >4.5</p>
+            <p>(1,508)</p>
+            <div class="price">
+            <p style="font-size: 20px;"> 
+                <b>₹843</b></p>
+             <p ><s>₹1,095</s></p>
+            <p style="color:green;">23% off</p>
+        </div>
+            </div>
+         
+               
+          
+           
+            </div>
+           
+    <p><b></b></p>
+    </div>  
+    
+    
+    
+    
+    
+    <div class="tab11">
+        <img src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70">
+        <p>NIKON Z6 II Kit Mirrorless<br>
+            black</p><br>
+            <div class="flip">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                
+      <div class="imgd">
+        <p >4.8</p>
+        <p>(985)</p>
+        <div class="price">
+        <p style="font-size: 20px;"> 
+            <b> ₹9,990</b></p>
+         <p ><s>₹10,000</s></p>
+        <p style="color:green;">45% off</p>
+    </div>
+        </div>
+     
+           
+      
+       
+        </div>
+       
+    <p><b></b></p>
+    </div>       
+    
+    
+    
+    <div class="tab11">
+        <img src="https://rukminim2.flixcart.com/image/612/612/jz30nm80/otg-new/c/m/g/3500tmcss-bajaj-35-original-imafj6g3amygtzyz.jpeg?q=70">
+        <p>Amaze NI 10 1100 W Dry Iron <br>
+            white & Turquoise</p><br>
+            <div class="flip">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                
+      <div class="imgd">
+        <p >3.8</p>
+        <p>(654)</p>
+        <div class="price">
+        <p style="font-size: 20px;"> 
+            <b>₹4,500</b></p>
+         <p ><s>₹4,999</s></p>
+        <p style="color:green;">15% off</p>
+    </div>
+        </div>
+     
+           
+      
+       
+        </div>
+       
+    <p><b></b></p>
+    </div>       
+    
+    
+    
+    
+    
+    
+    <div class="tab11">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/l/1/f/eco-electric-kettle-1-5-ltr-kan-ek-1-5-kreme-original-imagrnepyzgtphtj.jpeg?q=70">
+        <p>Amaze NI 10 1100 W Dry Iron <br>
+            white & Turquoise</p><br>
+            <div class="flip">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                
+      <div class="imgd">
+        <p >4.2</p>
+        <p>(524)</p>
+        <div class="price">
+        <p style="font-size: 20px;"> 
+            <b>₹899</b></p>
+         <p ><s>₹998</s></p>
+        <p style="color:green;">12% off</p>
+    </div>
+        </div>
+     
+           
+      
+       
+        </div>
+       
+    <p><b></b></p>
+    </div>              
+    </div>
+    <br><br><br><br>
+
+    
+
+
+
+    <div class="tab1">
+        <br>
+            <p style="font-size: larger;" ><b>Best of Electronics</b></p><br>
+            <div class="tab2">
+        
+                <div class="tab11">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l2p23rk0/iron/b/i/k/-original-imagdz3jvqmnukxt.jpeg?q=70">
+                                <p>Amaze NI 10 1100 W Dry Iron <br>
+                                    <span>white Turquoise</span></p><br>
+                                    <div class="flip">
+                                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                        
+                              <div class="imgd">
+                                <p >3.4</p>
+                                <p>(834)</p>
+                                <div class="price">
+                                <p style="font-size: 20px;"> 
+                                    <b>₹348 </b></p>
+                                 <p ><s>₹998</s></p>
+                                <p style="color:green;">65% off</p>
+                            </div>
+                                </div>
+                             
+                                   
+                              
+                               
+                                </div>
+                               
+                    <p><b></b></p>
+                </div>
+        
+            
+            <div class="tab11">
+                <img src="https://rukminim2.flixcart.com/image/612/612/krntoy80/mixer-grinder-juicer/j/c/p/with-free-electric-dry-iron-super-combo-longway-original-imag5epvawxjzyym.jpeg?q=70">
+                <p>700 W Mixer Grinder<br>
+                    <span> White, 3 Jars</span></p><br>
+                    <div class="flip">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                        
+              <div class="imgd">
+                <p >4.3</p>
+                <p>(95)</p>
+                <div class="price">
+                <p style="font-size: 20px;"> 
+                    <b><nbsp>₹1499</nbsp></b></p>
+                 <p ><s>₹1,688</s></p>
+                <p style="color:green;">35% off</p>
+            </div>
+                </div>
+             
+                   
+              
+               
+                </div>
+               
+        <p><b></b></p>
+        </div>
+        
+             
+             <div class="tab11">
+        <img src="https://rukminim2.flixcart.com/image/612/612/ju79hu80/hair-dryer-refurbished/6/6/x/c-hp8100-60-philips-original-imaffdv6pzdwhw2z.jpeg?q=70">       
+         <p>PHILIPS HP8100/60 Hair Dryer <br>
+            (1000 W, Blue)</p><br>
+                    <div class="flip">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                        
+              <div class="imgd">
+                <p >4.5</p>
+                <p>(1,508)</p>
+                <div class="price">
+                <p style="font-size: 20px;"> 
+                    <b>₹843</b></p>
+                 <p ><s>₹1,095</s></p>
+                <p style="color:green;">23% off</p>
+            </div>
+                </div>
+             
+                   
+              
+               
+                </div>
+               
+        <p><b></b></p>
+        </div>  
+        
+        
+        
+        
+        
+        <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70">
+            <p>NIKON Z6 II Kit Mirrorless<br>
+                black</p><br>
+                <div class="flip">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                    
+          <div class="imgd">
+            <p >4.8</p>
+            <p>(985)</p>
+            <div class="price">
+            <p style="font-size: 20px;"> 
+                <b> ₹9,990</b></p>
+             <p ><s>₹10,000</s></p>
+            <p style="color:green;">45% off</p>
+        </div>
+            </div>
+         
+               
+          
+           
+            </div>
+           
+        <p><b></b></p>
+        </div>       
+        
+        
+        
+        <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/612/612/jz30nm80/otg-new/c/m/g/3500tmcss-bajaj-35-original-imafj6g3amygtzyz.jpeg?q=70">
+            <p>Amaze NI 10 1100 W Dry Iron <br>
+                white & Turquoise</p><br>
+                <div class="flip">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                    
+          <div class="imgd">
+            <p >3.8</p>
+            <p>(654)</p>
+            <div class="price">
+            <p style="font-size: 20px;"> 
+                <b>₹4,500</b></p>
+             <p ><s>₹4,999</s></p>
+            <p style="color:green;">15% off</p>
+        </div>
+            </div>
+         
+               
+          
+           
+            </div>
+           
+        <p><b></b></p>
+        </div>       
+        
+        
+        
+        
+        
+        
+        <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/l/1/f/eco-electric-kettle-1-5-ltr-kan-ek-1-5-kreme-original-imagrnepyzgtphtj.jpeg?q=70">
+            <p>Amaze NI 10 1100 W Dry Iron <br>
+                white & Turquoise</p><br>
+                <div class="flip">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                    
+          <div class="imgd">
+            <p >4.2</p>
+            <p>(524)</p>
+            <div class="price">
+            <p style="font-size: 20px;"> 
+                <b>₹899</b></p>
+             <p ><s>₹998</s></p>
+            <p style="color:green;">12% off</p>
+        </div>
+            </div>
+         
+               
+          
+           
+            </div>
+           
+        <p><b></b></p>
+        </div>              
+        </div>
+        <br><br><br><br>
+
+        
+
+
+
+        <div class="tab1">
+            <br>
+                <p style="font-size: larger;" ><b>Best of Electronics</b></p><br>
+                <div class="tab2">
+            
+                    <div class="tab11">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/l2p23rk0/iron/b/i/k/-original-imagdz3jvqmnukxt.jpeg?q=70">
+                                    <p>Amaze NI 10 1100 W Dry Iron <br>
+                                        <span>white Turquoise</span></p><br>
+                                        <div class="flip">
+                                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                            
+                                  <div class="imgd">
+                                    <p >3.4</p>
+                                    <p>(834)</p>
+                                    <div class="price">
+                                    <p style="font-size: 20px;"> 
+                                        <b>₹348 </b></p>
+                                     <p ><s>₹998</s></p>
+                                    <p style="color:green;">65% off</p>
+                                </div>
+                                    </div>
+                                 
+                                       
+                                  
+                                   
+                                    </div>
+                                   
+                        <p><b></b></p>
+                    </div>
+            
+                
+                <div class="tab11">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/krntoy80/mixer-grinder-juicer/j/c/p/with-free-electric-dry-iron-super-combo-longway-original-imag5epvawxjzyym.jpeg?q=70">
+                    <p>700 W Mixer Grinder<br>
+                        <span> White, 3 Jars</span></p><br>
+                        <div class="flip">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                            
+                  <div class="imgd">
+                    <p >4.3</p>
+                    <p>(95)</p>
+                    <div class="price">
+                    <p style="font-size: 20px;"> 
+                        <b><nbsp>₹1499</nbsp></b></p>
+                     <p ><s>₹1,688</s></p>
+                    <p style="color:green;">35% off</p>
+                </div>
+                    </div>
+                 
+                       
+                  
+                   
+                    </div>
+                   
+            <p><b></b></p>
+            </div>
+            
+                 
+                 <div class="tab11">
+            <img src="https://rukminim2.flixcart.com/image/612/612/ju79hu80/hair-dryer-refurbished/6/6/x/c-hp8100-60-philips-original-imaffdv6pzdwhw2z.jpeg?q=70">       
+             <p>PHILIPS HP8100/60 Hair Dryer <br>
+                (1000 W, Blue)</p><br>
+                        <div class="flip">
+                            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                            
+                  <div class="imgd">
+                    <p >4.5</p>
+                    <p>(1,508)</p>
+                    <div class="price">
+                    <p style="font-size: 20px;"> 
+                        <b>₹843</b></p>
+                     <p ><s>₹1,095</s></p>
+                    <p style="color:green;">23% off</p>
+                </div>
+                    </div>
+                 
+                       
+                  
+                   
+                    </div>
+                   
+            <p><b></b></p>
+            </div>  
+            
+            
+            
+            
+            
+            <div class="tab11">
+                <img src="https://rukminim2.flixcart.com/image/200/200/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70">
+                <p>NIKON Z6 II Kit Mirrorless<br>
+                    black</p><br>
+                    <div class="flip">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                        
+              <div class="imgd">
+                <p >4.8</p>
+                <p>(985)</p>
+                <div class="price">
+                <p style="font-size: 20px;"> 
+                    <b> ₹9,990</b></p>
+                 <p ><s>₹10,000</s></p>
+                <p style="color:green;">45% off</p>
+            </div>
+                </div>
+             
+                   
+              
+               
+                </div>
+               
+            <p><b></b></p>
+            </div>       
+            
+            
+            
+            <div class="tab11">
+                <img src="https://rukminim2.flixcart.com/image/612/612/jz30nm80/otg-new/c/m/g/3500tmcss-bajaj-35-original-imafj6g3amygtzyz.jpeg?q=70">
+                <p>Amaze NI 10 1100 W Dry Iron <br>
+                    white & Turquoise</p><br>
+                    <div class="flip">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                        
+              <div class="imgd">
+                <p >3.8</p>
+                <p>(654)</p>
+                <div class="price">
+                <p style="font-size: 20px;"> 
+                    <b>₹4,500</b></p>
+                 <p ><s>₹4,999</s></p>
+                <p style="color:green;">15% off</p>
+            </div>
+                </div>
+             
+                   
+              
+               
+                </div>
+               
+            <p><b></b></p>
+            </div>       
+            
+            
+            
+            
+            
+            
+            <div class="tab11">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/l/1/f/eco-electric-kettle-1-5-ltr-kan-ek-1-5-kreme-original-imagrnepyzgtphtj.jpeg?q=70">
+                <p>Amaze NI 10 1100 W Dry Iron <br>
+                    white & Turquoise</p><br>
+                    <div class="flip">
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                        
+              <div class="imgd">
+                <p >4.2</p>
+                <p>(524)</p>
+                <div class="price">
+                <p style="font-size: 20px;"> 
+                    <b>₹899</b></p>
+                 <p ><s>₹998</s></p>
+                <p style="color:green;">12% off</p>
+            </div>
+                </div>
+             
+                   
+              
+               
+                </div>
+               
+            <p><b></b></p>
+            </div>              
+            </div>
+            <br><br><br><br>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="tab1">
+                    <br>
+                        <p style="font-size: larger;" ><b>Best of Electronics</b></p><br>
+                        <div class="tab2">
+                    
+                            <div class="tab11">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/l2p23rk0/iron/b/i/k/-original-imagdz3jvqmnukxt.jpeg?q=70">
+                                            <p>Amaze NI 10 1100 W Dry Iron <br>
+                                                white & Turquoise</p><br>
+                                                <div class="flip">
+                                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                                    
+                                          <div class="imgd">
+                                            <p >3.4</p>
+                                            <p>(834)</p>
+                                            <div class="price">
+                                            <p style="font-size: 20px;"> 
+                                                <b>₹348 </b></p>
+                                             <p ><s>₹998</s></p>
+                                            <p style="color:green;">65% off</p>
+                                        </div>
+                                            </div>
+                                         
+                                               
+                                          
+                                           
+                                            </div>
+                                           
+                                <p><b></b></p>
+                            </div>
+                    
+                        
+                        <div class="tab11">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/krntoy80/mixer-grinder-juicer/j/c/p/with-free-electric-dry-iron-super-combo-longway-original-imag5epvawxjzyym.jpeg?q=70">
+                            <p>Amaze NI 10 1100 W Dry Iron <br>
+                                white & Turquoise</p><br>
+                                <div class="flip">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                    
+                          <div class="imgd">
+                            <p >3.4</p>
+                            <p>(834)</p>
+                            <div class="price">
+                            <p style="font-size: 20px;"> 
+                                <b>₹2199</b></p>
+                             <p ><s>₹2300</s></p>
+                            <p style="color:green;">65% off</p>
+                        </div>
+                            </div>
+                         
+                               
+                          
+                           
+                            </div>
+                           
+                    <p><b></b></p>
+                    </div>
+                    
+                         
+                         <div class="tab11">
+                            <img src="https://rukminim2.flixcart.com/image/612/612/kah413k0/hair-dryer/y/t/e/havells-compact-hair-dryer-hd3151-original-imafsfjppyt5hqy8.jpeg?q=70">
+                            <p>Amaze NI 10 1100 W Dry Iron <br>
+                                white & Turquoise</p><br>
+                                <div class="flip">
+                                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                    
+                          <div class="imgd">
+                            <p >3.4</p>
+                            <p>(834)</p>
+                            <div class="price">
+                            <p style="font-size: 20px;"> 
+                                <b>₹1499 </b></p>
+                             <p ><s>₹1599</s></p>
+                            <p style="color:green;">65% off</p>
+                        </div>
+                            </div>
+                         
+                               
+                          
+                           
+                            </div>
+                           
+                    <p><b></b></p>
+                    </div>  
+                    
+                    
+                    
+                    
+                    
+                    <div class="tab11">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/kjn6qvk0/gamepad/n/f/q/sony-dualsense-original-imafz66q8kv9nchz.jpeg?q=70">
+                        <p>Amaze NI 10 1100 W Dry Iron <br>
+                            white & Turquoise</p><br>
+                            <div class="flip">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                
+                      <div class="imgd">
+                        <p >3.4</p>
+                        <p>(834)</p>
+                        <div class="price">
+                        <p style="font-size: 20px;"> 
+                            <b>₹598 </b></p>
+                         <p ><s>₹777</s></p>
+                        <p style="color:green;">65% off</p>
+                    </div>
+                        </div>
+                       </div>
+                 <p><b></b></p>
+                    </div>       
+                    <div class="tab11">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/l52sivk0/water-geyser/l/f/g/2017-10lm-2000-candes-10-original-imagfu4rptchj4gt.jpeg?q=70">
+                        <p>Amaze NI 10 1100 W Dry Iron <br>
+                            white & Turquoise</p><br>
+                            <div class="flip">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                
+                      <div class="imgd">
+                        <p >3.4</p>
+                        <p>(834)</p>
+                        <div class="price">
+                        <p style="font-size: 20px;"> 
+                            <b>₹3299 </b></p>
+                         <p ><s>₹3799</s></p>
+                        <p style="color:green;">65% off</p>
+                    </div>
+                        </div>
+                     
+                           
+                      
+                       
+                        </div>
+                       
+                    <p><b></b></p>
+                    </div>       
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="tab11">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/kppt47k0/immersion-rod/c/n/q/1500-submersible-nih-430-05-nova-original-imag3vuhz6z7g3bm.jpeg?q=70">
+                        <p>Amaze NI 10 1100 W Dry Iron <br>
+                            white & Turquoise</p><br>
+                            <div class="flip">
+                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"><br>
+                                
+                      <div class="imgd">
+                        <p >3.4</p>
+                        <p>(723)</p>
+                        <div class="price">
+                        <p style="font-size: 20px;"> 
+                            <b>₹750 </b></p>
+                         <p ><s>₹1400</s></p>
+                        <p style="color:green;">65% off</p>
+                    </div>
+                        </div>
+                     
+                           
+                      
+                       
+                        </div>
+                       
+                    <p><b></b></p>
+                    </div>              
+                </div>
+                    
+                    <br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+                    <div class="footer">
+                    <div class="footer1">
+                        <ul >
+                            <li style="color: gray;"> ABOUT</li>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Flipkart Stories</li>
+                            <li >Press</li>
+                            <li>Flipkart Wholesal</li>
+                            <li>Corporate Information</li>
+                        </ul>
+                    </div>
+                    <div class="footer1">
+                          <ul>
+                            <li style="color: gray;">HELP</li>
+                            <li>Payments</li>
+                            <li>Shipping</li>
+                            <li>Cancellation & Return</li>
+                            <li>FAQ</li>
+                            <li>Report Infringement</li>
+                          </ul>
+                    </div>
+                    <div class="footer1">
+                        <ul>
+                            <li style="color: gray;">CONSUMER POLICY</li>
+                            <li>Cancellation & Returns</li>
+                            <li>Terms Of Use</li>
+                            <li>Security</li>
+                            <li>Privacy</li>
+                            <li>Sitemap</li>
+                            <li>Grievance Redressal
+                            </li>
+                            <li>EPR Compliance
+                            </li>
+                        </ul>
+                    </div>
+                     <div class="footer1">
+                        <ul>
+                            <li style="color: gray;">SOCIAL</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                   <p class="line"></p>
+                    
+                    <div class="footer1">
+                        <ul>
+                            <li  style="color: gray;">Mail Us</li>
+                            <li>Flipkart Internet Private Limited,</li>
+                            <li>Buildings alyssa, Begonia &</li>
+                            <li>Clove Embassy Tech Village,</li>
+                            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                            <li>Bengaluru, 560103,</li>
+                            <li>Karnataka, India</li>
+                        </ul>
+                    </div>
+                    <div class="footer1">
+                        <ul>
+                            <li style="color: gray;">Registered office address</li>
+                            <li>Flipkart Internet Private Limited,</li>
+                            <li>Buildings alyssa, Begonia &</li>
+                            <li>Clove Embassy Tech Village,</li>
+                            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+                            <li>Bengaluru, 560103,</li>
+                            <li>Karnataka, India</li>
+                            <li>CIN : U51109KA2012PTC066107</li>
+                            <li >Telephone : <a  style="color: rgb(0, 119, 255);">044-45614700</a></li>
+                            
+                            
+                             </ul>
+                    </div>
+                </div>
+                    <div ><p class="line2"> </p>
+                    </div>
+                 <div class="footer3">
+                    <ul>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K">
+                            Become a seller</li>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="> 
+                            Advertise</li>
+                        <li><img src ="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="> 
+                            Gift cards</li>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo=">
+                             Help center</li>
+                        <li>© 2007-2023 Flipkart.com</li>
+                        <li><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"></li>
+                    </ul>
+                 </div>   
+
+
+                 
+        
+                   
+                
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
